@@ -1,0 +1,9 @@
+<%= form_with url: attachments_path, method: :post, multipart: true do |f|%>
+  <div class='form-group'>
+    <label for='images'>Choose Images(You can pickup multiple images)</label>
+    <%= f.file_field :images, multiple: true, class: 'form-control-file' %>
+  </div>
+  <div class='form-group'>
+    <%= f.submit 'Upload' %>
+  </div>   
+<% end %>
