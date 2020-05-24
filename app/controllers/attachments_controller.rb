@@ -2,7 +2,7 @@ class AttachmentsController < ApplicationController
   before_action :check_images_exist?, only: :create
   
   def index
-    @attachments = Attachment.all.sample(10)
+    @attachments = Attachment.all.sample(Attachment::RANDOM_COUNT)
     @images = @attachments.collect{ |c| c.image.url }
     render json: @images, status: :ok 
   end
@@ -13,10 +13,10 @@ class AttachmentsController < ApplicationController
       images << { image: img }  
     end
     @attachment = Attachment.create!(images)
-    if @attachment
-      redirect_to root_path, notice: "Uploaded successfully."
+    if @attachment.present?
+      redirect_to root_path, notice: 'Uploaded successfully.'
     else
-      redirect_to root_path, error: 'Something wnet wrong.'
+      redirect_to root_path, error: 'Something went wrong.'
     end    
   end
   
