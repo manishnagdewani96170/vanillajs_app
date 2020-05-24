@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# TickApp
 
-Things you may want to cover:
+It is game app created with Rails and Javascript.
 
-* Ruby version
+## Installation
 
-* System dependencies
+Here are the steps you can follow:
 
-* Configuration
+rvm install ruby-2.5.3
 
-* Database creation
+rvm gemset create tickapp
 
-* Database initialization
+rvm gemset use tickapp
 
-* How to run the test suite
+bundle install 
 
-* Services (job queues, cache servers, search engines, etc.)
+## Docker setup
 
-* Deployment instructions
-
-* ...
+docker build -t tickapp . && docker run -it tickapp
