@@ -1,0 +1,132 @@
+AllCops:
+  TargetRubyVersion: 2.5.3
+  Exclude:
+    - bin/**/*
+    - config/boot.rb
+    - config/deploy.rb
+    - config/*
+    - config/deploy/*
+    - db/schema.rb
+    - script/**/*
+    - tmp/**/*
+    - vendor/**/*
+    - Rakefile
+    - Gemfile
+    - Gemfile.lock
+    - lib/**/*
+    - db/**/*
+    - spec/rails_helper.rb
+    - spec/spec_helper.rb
+  DisplayCopNames: true
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/ClassVars:
+  Enabled: false
+Style/FormatStringToken:
+  Enabled: false
+Layout/SpaceBeforeComma:
+  Enabled: false
+Layout/SpaceBeforeSemicolon:
+  Enabled: false
+Style/AccessModifierDeclarations:
+  Enabled: false
+Style/Alias:
+  Enabled: false
+Style/BeginBlock:
+  Enabled: false
+Style/CaseEquality:
+  Enabled: false
+Documentation:
+  Enabled: false
+Style/EmptyMethod:
+  Enabled: false
+Metrics/MethodLength:
+  Max: 400
+Metrics/ClassLength:
+  Max: 500
+Naming/VariableNumber:
+  EnforcedStyle: 'snake_case'
+Naming/FileName:
+  Enabled: false
+Metrics/BlockNesting:
+  Enabled: false
+Style/Lambda:
+  Enabled: false
+Metrics/BlockLength:
+  Max: 150
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*'
+    - 'config/routes.rb'
+    - 'app/helpers/builders/*'
+Layout/TrailingEmptyLines:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Max: 90
+Metrics/PerceivedComplexity:
+  Max: 90
+Style/Next:
+  Enabled: false
+Style/RedundantSelf:
+  Enabled: false
+Style/ConditionalAssignment:
+  Enabled: false
+Metrics/ParameterLists:
+  Max: 8
+Metrics/ModuleLength:
+  Enabled: false
+Lint/SafeNavigationChain:
+  Enabled: false
+Lint/AmbiguousRegexpLiteral:
+  Enabled: false
+Style/NestedParenthesizedCalls:
+  Enabled: false
+Style/EachWithObject:
+  Enabled: false
+Style/SpecialGlobalVars:
+  Enabled: false
+Style/SafeNavigation:
+  Enabled: false
+Lint/AssignmentInCondition:
+  Enabled: false
+Lint/ImplicitStringConcatenation:
+  Enabled: false
+Layout/HashAlignment:
+  Enabled: false
+Style/RescueModifier:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/RedundantInterpolation:
+  Enabled: false
+Style/RedundantParentheses:
+  Enabled: false
+Metrics/LineLength:
+  Enabled: false
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+Layout/SpaceInsideStringInterpolation:
+  Enabled: false
+Style/ParenthesesAroundCondition:
+  Enabled: false
+Layout/SpaceAroundOperators:
+  Enabled: false
+Style/RescueStandardError:
+  Enabled: false
+Style/RedundantBegin:
+  Enabled: false
+Style/TrivialAccessors:
+  Enabled: false
+Lint/SuppressedException:
+  Enabled: false
