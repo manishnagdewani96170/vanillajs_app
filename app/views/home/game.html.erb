@@ -1,0 +1,21 @@
+<center>
+  <h1></h1>
+  
+  <img name='image' src='' id='image' width='50' height='50'/>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope='col'>Tick</th>
+        <th scope='col'>Index of Image in the array</th>
+      </tr>
+    </thead>
+    <tbody id='tbody'>
+      <%= render partial: 'plays/play', loclas: { :@plays => @plays } %>
+    </tbody>
+  </table>  
+
+  <button id='play'>ADD</button>
+</center>
+
+<%= javascript_include_tag 'game', 'data-turbolinks-track': 'reload' %>

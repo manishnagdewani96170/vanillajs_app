@@ -1,0 +1,6 @@
+<% @plays.each do |play| %>
+  <tr>
+    <td><%= play.timer_value %></td>
+    <td><%= image_tag play.image_url, width: 50, height: 50 %></td>
+  </tr>
+<% end %>
